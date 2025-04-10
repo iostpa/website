@@ -1,0 +1,22 @@
+body {
+    background-color:#363a4f;
+    font-family: 'National Park';
+}
+
+h1 {
+   color:#f0c6c6;
+   text-align: center;
+}
+
+p {
+    color:#cad3f5;
+}
+
+ul {
+    color: blanchedalmond;
+    list-style-type: circle;
+}
+
+a {
+    color: blanchedalmond
+}
