@@ -20,3 +20,15 @@ ul {
 a {
     color: blanchedalmond
 }
+
+.center{
+    text-align:center;
+    border:1px;
+}
+
+.icons{
+    display:inline-block;
+    margin:5px 5px;
+    padding:5px;
+    border:1px;
+}
