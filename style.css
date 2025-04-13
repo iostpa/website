@@ -21,6 +21,7 @@ a {
     color: blanchedalmond
 }
 
+
 .center{
     text-align:center;
     border:1px;
@@ -31,4 +32,8 @@ a {
     margin:5px 5px;
     padding:5px;
     border:1px;
+}
+
+.socials {
+    text-decoration:none;
 }
