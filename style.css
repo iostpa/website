@@ -18,9 +18,13 @@ ul {
 }
 
 a {
-    color: blanchedalmond
+    color: blanchedalmond;
 }
 
+.lanyard {
+    display: flex;
+    justify-content: center;
+}
 
 .center{
     text-align:center;
