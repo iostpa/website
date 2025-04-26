@@ -10,11 +10,14 @@ h1 {
 
 p {
     color:#cad3f5;
+    text-align: center;
 }
 
 ul {
     color: blanchedalmond;
     list-style-type: circle;
+    text-align: center;
+    list-style-position: inside;
 }
 
 a {
