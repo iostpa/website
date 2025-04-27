@@ -1,32 +1,38 @@
 body {
-    background-color:#363a4f;
+    background-color:#0E1111;
     font-family: 'National Park';
 }
 
 h1 {
-   color:#f0c6c6;
+   color:#cad3f5;
    text-align: center;
 }
 
 p {
     color:#cad3f5;
-    text-align: center;
+    /* text-align: center; */
 }
 
 ul {
-    color: blanchedalmond;
+    color: #cad3f5;
     list-style-type: circle;
-    text-align: center;
+    /* text-align: center; */
     list-style-position: inside;
 }
 
 a {
-    color: blanchedalmond;
+    color: #cad3f5;
 }
 
 .lanyard {
     display: flex;
     justify-content: center;
+}
+
+.textcenter {
+    display: grid;
+    justify-content: center;
+    align-content: start;
 }
 
 .center{
