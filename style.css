@@ -24,6 +24,11 @@ a {
     color: blanchedalmond;
 }
 
+img {
+    height: auto;
+    width: auto;
+}
+
 .lanyard {
     display: flex;
     justify-content: center;
