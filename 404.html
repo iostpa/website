@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Not Found</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1e1e2e;
+      --fg: #cdd6f4;
+      --accent: #f38ba8;
+      --muted: #a6adc8;
+      --highlight: #fab387;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: 'National Park', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .notfound {
+      text-align: center;
+      background: #313244;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .notfound h1 {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    .notfound p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    .notfound a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: var(--highlight);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .notfound a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-        <h1>404 - Not Found</h1>
-        <p>
-            <strong>Oops! It seems like the page you're looking for doesn't exist.</strong>
-        </p>
-
-        <p>
-            You can always go back to the <a href="/">home page</a>.
-        </p>
-    </div>
+  <div class="notfound">
+    <h1>404 - Not Found</h1>
+    <p>Oops! The page you're looking for doesn’t exist or moved.</p>
+    <a href="/">← Go back to home</a>
+  </div>
 </body>
 </html>
