@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Not Found</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-        <h1>404 - Not Found</h1>
-        <p>
-            <strong>Oops! It seems like the page you're looking for doesn't exist.</strong>
-        </p>
-
-        <p>
-            You can always go back to the <a href="/">home page</a>.
-        </p>
+    <link href="./src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-full gap-16">
+      <h1 class="text-6xl">404 - Not Found</h1>
+      <p class="text-lg">
+        Oops! It seems like the page you're looking for doesn't exist.
+        <span>
+          You can always go back to the
+          <a
+            href="/"
+            class="text-amber-400 underline hover:text-amber-600 hover:scale-105 transition-all inline-block"
+            >home page</a
+          >.
+        </span>
+      </p>
     </div>
-</body>
+  </body>
 </html>

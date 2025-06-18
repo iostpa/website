@@ -1,62 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iostpa</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="iostpa's website">
+    <meta name="description" content="iostpa's website" />
     <meta property="og:title" content="iostpa" />
-    <meta property="og:site_name" content="iostpa">
+    <meta property="og:site_name" content="iostpa" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://iostpa.com" />
-    <meta property="og:image" content="https://iostpa.com/img/main-pfp.png"/>
-    <meta property="og:description" content="iostpa's website. Come check it out!" />
-    <meta name="theme-color" content="#d9d9d9" />
-
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link
-        rel="preload"
-        href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
+    <meta property="og:image" content="https://iostpa.com/img/main-pfp.png" />
+    <meta
+      property="og:description"
+      content="iostpa's website. come check it out!"
     />
-</head>
+    <meta name="theme-color" content="#ffd230" />
 
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-    <h1>Hey there!</h1>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/main.ts"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center gap-16 items-center h-full px-4">
+      <div class="flex justify-center items-center">
+        <!-- intended a tag to self -->
+        <h1 class="text-6xl font-bold text-heading" id="introduction">
+          Hey there! I'm
+          <a
+            class="underline hover:text-amber-400 hover:scale-[101%] transition-all inline-block"
+            href="https://iostpa.com"
+            >iostpa</a
+          >!
+        </h1>
+      </div>
 
-    <div class="textcenter">
-        <p>Welcome to my website! I'm iostpa, I just do whatever really. Here's some projects that I've contributed to.</p>
-        <ul>
-            <li><a href="https://is-a.dev">is-a.dev</a>, owned by wdhdev</li>
-            <li><a href="https://is-not.cool">is-not.cool</a>, owned by trollmeight</li>
-            <li><a href="https://takina.orangc.net">Takina</a>, made by orangc</li>
-        </ul>
-        <p>If you want to contact me, you can via <a href="mailto:iostpa@iostpa.com">Email</a>, <a href="https://iostpa.com/bluesky">Bluesky</a>, <a href="https://iostpa.com/twitter">Twitter</a> or <a href="https://iostpa.com/discord">Discord</a>.</p>
+      <div class="text-lg">
+        <p id="about">
+          I just do whatever really. Here's some projects that I've contributed
+          to.
+        </p>
+
+        <div class="flex justify-center">
+          <!-- prettier-ignore -->
+          <ul class="text-left list-inside list-disc w-3/4" id="list">
+            <li><a href="https://is-a.dev" class="text-amber-400 underline hover:text-amber-600">is-a.dev</a>, owned by wdhdev</li>
+            <li><a href="https://is-not.cool" class="text-amber-400 underline hover:text-amber-600">is-not.cool</a>, owned by trollmeight</li>
+            <li><a href="https://takina.orangc.net" class="text-amber-400 underline hover:text-amber-600">Takina</a>, made by orangc</li>
+          </ul>
+        </div>
+
+        <p id="contact">
+          If you want to contact me, you can via
+          <a
+            href="mailto:iostpa@iostpa.com"
+            class="text-amber-400 underline hover:text-amber-600"
+            >Email</a
+          >,
+          <a
+            href="https://iostpa.com/bluesky"
+            class="text-amber-400 underline hover:text-amber-600"
+            >Bluesky</a
+          >,
+          <a
+            href="https://iostpa.com/twitter"
+            class="text-amber-400 underline hover:text-amber-600"
+            >Twitter</a
+          >
+          or
+          <a
+            href="https://iostpa.com/discord"
+            class="text-amber-400 underline hover:text-amber-600"
+            >Discord</a
+          >.
+        </p>
+
+        <div class="flex justify-center items-center my-12" id="lanyard">
+          <img
+            src="https://lanyard.cnrad.dev/api/716306888492318790?bg=16191d"
+            alt="Discord Status"
+            class="border border-amber-400 hover:border-amber-600 hover:scale-105 rounded-4xl cursor-pointer transition-all"
+          />
+        </div>
+
+        <div class="flex gap-8 justify-center" id="socials">
+          <a
+            href="https://iostpa.com/twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/twitter.svg" alt="Twitter Logo" />
+          </a>
+          <a
+            href="https://iostpa.com/youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/youtube.svg" alt="YouTube Logo" />
+          </a>
+          <a
+            href="https://iostpa.com/github"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="socials"
+          >
+            <img src="img/github.svg" alt="GitHub Logo" />
+          </a>
+          <a
+            href="https://iostpa.com/bluesky"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/bluesky.svg" alt="Bluesky Logo" class="w-8" />
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="lanyard">
-        <img src="https://lanyard.cnrad.dev/api/716306888492318790?bg=303446" alt="Discord Status">
+    <div class="relative">
+      <button
+        class="absolute bottom-0 right-0 p-4 w-24"
+        onclick="sillylilfemboy();"
+        title="activate wife mode"
+        id="wife"
+      >
+        <img
+          src="/img/main-pfp.png"
+          alt=""
+          class="rounded-full border-4 hover:border-8 border-amber-400 hover:border-amber-600 hover:scale-125 transition-all cursor-pointer"
+        />
+      </button>
     </div>
-
-    <br>
-
-    <div class="center">
-        <a href="https://iostpa.com/twitter" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/twitter.svg" alt="Twitter Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/youtube" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/youtube.svg" alt="YouTube Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/github" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/github.svg" alt="GitHub Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/bluesky" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/bluesky.svg" alt="Bluesky Logo" class="icons">
-        </a>
-    </div>
-</body>
+  </body>
 </html>

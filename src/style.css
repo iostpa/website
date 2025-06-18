@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #16191d;
+  --color-heading: #eee;
+  --color-text: #ccc;
+  --font-grotesk: "Space Grotesk", sans-serif;
+}
+
+html,
+body {
+  @apply w-full h-full bg-primary text-text font-grotesk;
+}
