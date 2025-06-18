@@ -1,62 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>iostpa</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iostpa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="iostpa's Website">
-    <meta property="og:title" content="iostpa" />
-    <meta property="og:site_name" content="iostpa">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://iostpa.com" />
-    <meta property="og:image" content="https://iostpa.com/img/main-pfp.png"/>
-    <meta property="og:description" content="iostpa's Website. Come check it out!" />
-    <meta name="theme-color" content="#d9d9d9" />
+  <meta name="description" content="iostpa's Website" />
+  <meta property="og:title" content="iostpa" />
+  <meta property="og:site_name" content="iostpa" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iostpa.com" />
+  <meta property="og:image" content="https://iostpa.com/img/main-pfp.png" />
+  <meta property="og:description" content="iostpa's Website. Come check it out!" />
+  <meta name="theme-color" content="#d9d9d9" />
 
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link
-        rel="preload"
-        href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1e1e2e;
+      --fg: #cdd6f4;
+      --accent: #f38ba8;
+      --muted: #a6adc8;
+      --highlight: #fab387;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'National Park', sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .textcenter {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #313244;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .textcenter p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 1rem 0;
+      color: var(--fg);
+    }
+
+    .textcenter ul {
+      list-style: inside disc;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .lanyard {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .icons {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      filter: brightness(90%);
+      transition: transform 0.2s ease;
+    }
+
+    .icons:hover {
+      transform: scale(1.1);
+      filter: brightness(110%);
+    }
+
+    @media (max-width: 600px) {
+      .textcenter {
+        padding: 1rem;
+      }
+
+      .icons {
+        width: 32px;
+        height: 32px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <h1>Hey there!</h1>
 
-    <h1>Hey there!</h1>
+  <div class="textcenter">
+    <p>Welcome to my website! I'm <strong>iostpa</strong>, I just do whatever really. Here's some projects that I've contributed to:</p>
+    <ul>
+      <li><a href="https://is-a.dev">is-a.dev</a>, owned by wdhdev</li>
+      <li><a href="https://is-not.cool">is-not.cool</a>, owned by trollmeight</li>
+      <li><a href="https://takina.orangc.net">Takina</a>, made by orangc</li>
+    </ul>
+    <p>You can contact me via <a href="mailto:iostpa@iostpa.com">Email</a>, <a href="/bluesky">Bluesky</a>, <a href="/twitter">Twitter</a>, or <a href="/discord">Discord</a>.</p>
+  </div>
 
-    <div class="textcenter">
-        <p>Welcome to my website! I'm iostpa, I just do whatever really. Here's some projects that I've contributed to.</p>
-        <ul>
-            <li><a href="https://is-a.dev">is-a.dev</a>, owned by wdhdev</li>
-            <li><a href="https://is-not.cool">is-not.cool</a>, owned by trollmeight</li>
-            <li><a href="https://takina.orangc.net">Takina</a>, made by orangc</li>
-        </ul>
-        <p>If you want to contact me, you can via <a href="mailto:iostpa@iostpa.com">Email</a>, <a href="https://iostpa.com/bluesky">Bluesky</a>, <a href="https://iostpa.com/twitter">Twitter</a> or <a href="https://iostpa.com/discord">Discord</a>.</p>
-    </div>
+  <div class="lanyard">
+    <img src="https://lanyard.cnrad.dev/api/716306888492318790?bg=303446" alt="Discord Status" />
+  </div>
 
-    <div class="lanyard">
-        <img src="https://lanyard.cnrad.dev/api/716306888492318790?bg=303446" alt="Discord Status">
-    </div>
-
-    <br>
-
-    <div class="center">
-        <a href="https://iostpa.com/twitter" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/twitter.svg" alt="Twitter Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/youtube" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/youtube.svg" alt="YouTube Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/github" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/github.svg" alt="GitHub Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/bluesky" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/bluesky.svg" alt="Bluesky Logo" class="icons">
-        </a>
-    </div>
+  <div class="center">
+    <a href="/twitter" target="_blank" class="socials">
+      <img src="img/twitter.svg" alt="Twitter" class="icons" />
+    </a>
+    <a href="/youtube" target="_blank" class="socials">
+      <img src="img/youtube.svg" alt="YouTube" class="icons" />
+    </a>
+    <a href="/github" target="_blank" class="socials">
+      <img src="img/github.svg" alt="GitHub" class="icons" />
+    </a>
+    <a href="/bluesky" target="_blank" class="socials">
+      <img src="img/bluesky.svg" alt="Bluesky" class="icons" />
+    </a>
+  </div>
 </body>
 </html>
