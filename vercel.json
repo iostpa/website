@@ -6,8 +6,6 @@
     { "src": "/bluesky", "status": 301, "headers": { "Location": "https://bsky.app/profile/iostpa.com/" } },
     { "src": "/discord", "status": 301, "headers": { "Location": "https://discord.com/users/716306888492318790/" } },
 
-    { "handle": "filesystem" },
-
-    { "src": "/.*", "status": 404, "dest": "/404.html" }
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }
