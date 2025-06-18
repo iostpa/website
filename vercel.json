@@ -4,8 +4,6 @@
     { "src": "/twitter", "status": 301, "headers": { "Location": "https://twitter.com/iostpa/" } },
     { "src": "/youtube", "status": 301, "headers": { "Location": "https://youtube.com/@iostpa/" } },
     { "src": "/bluesky", "status": 301, "headers": { "Location": "https://bsky.app/profile/iostpa.com/" } },
-    { "src": "/discord", "status": 301, "headers": { "Location": "https://discord.com/users/716306888492318790/" } },
-
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+    { "src": "/discord", "status": 301, "headers": { "Location": "https://discord.com/users/716306888492318790/" } }
   ]
 }
