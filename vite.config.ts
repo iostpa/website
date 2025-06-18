@@ -13,7 +13,7 @@ export default defineConfig({
           closeBundle() {
             const dist = resolve(__dirname, "dist");
             copyFileSync(
-              join(dist, "index.html"),
+              "404.html",
               join(dist, "404.html")
             );
           },
