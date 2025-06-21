@@ -24,14 +24,19 @@ a {
     color: blanchedalmond;
 }
 
-img {
-    height: auto;
-    width: auto;
-}
+/* img {
+    width: 24px;
+    height: 24px;
+}*/
 
 .lanyard {
     display: flex;
     justify-content: center;
+}
+
+.lanyard img {
+    width: 410px;
+    height: 210px;
 }
 
 .textcenter {
@@ -54,4 +59,9 @@ img {
 
 .socials {
     text-decoration:none;
+}
+
+.socials img {
+    width: 32px;
+    height: 32px;
 }
