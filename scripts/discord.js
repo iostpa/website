@@ -1,5 +1,5 @@
 const discordUserId = "716306888492318790";
-const presenceDiv = document.getElementById("discord");
+const discordDiv = document.getElementById("discord");
 
 async function fetchPresence() {
   try {
@@ -7,12 +7,17 @@ async function fetchPresence() {
     const data = await response.json();
 
     const { discord_status } = data.data;
-    let output = `I am currently on <u>${discord_status}</u> mode in Discord!`;
+    let output;
+    if (data.discord_status = "dnd") {
+      output = `I am currently on <u>do not disturb</u> in Discord!`;
+    } else {
+      output = `I am currently <u>${discord_status}</u> in Discord!`;
+    }
 
-    presenceDiv.innerHTML = output;
+    discordDiv.innerHTML = output;
   } catch (error) {
     console.error("Error fetching presence:", error);
-    presenceDiv.innerHTML = "Error fetching data.";
+    discordDiv.innerHTML = "Error fetching data.";
   }
 }
 
