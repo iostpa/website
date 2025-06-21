@@ -8,7 +8,7 @@ async function fetchPresence() {
 
     const { discord_status } = data.data;
     let output;
-    if (data.discord_status = "dnd") {
+    if (data.discord_status == "dnd") {
       output = `I am currently on <u>do not disturb</u> in Discord!`;
     } else {
       output = `I am currently <u>${discord_status}</u> in Discord!`;
