@@ -24,21 +24,6 @@ a {
     color: blanchedalmond;
 }
 
-/* img {
-    width: 24px;
-    height: 24px;
-}*/
-
-.lanyard {
-    display: flex;
-    justify-content: center;
-}
-
-.lanyard img {
-    width: 410px;
-    height: 210px;
-}
-
 .textcenter {
     display: grid;
     justify-content: center;
@@ -64,4 +49,12 @@ a {
 .socials img {
     width: 32px;
     height: 32px;
+}
+
+#discord {
+    color:#cad3f5;
+}
+
+#discord u {
+    color: blanchedalmond;
 }
