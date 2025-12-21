@@ -15,7 +15,8 @@
         <meta property="og:description" content="iostpa's website. Come check it out!" />
         <meta name="theme-color" content="#d9d9d9"/>
 
-        <link href="style.css" rel="stylesheet">
+        <link rel="preload" href="style.css" as="style" />
+        <link rel="stylesheet" href="style.css">
         <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
             onload="this.onload=null;this.rel='stylesheet'"
         />
     </head>
-    <body>
+    <body role="website">
         <div id="wrapper">
             <div id="page-wrap">
                 <h1>Hey there!</h1>
