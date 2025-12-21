@@ -1,33 +1,23 @@
 body {
-    background-color:#363a4f;
-    font-family: 'National Park';
+    background-color: #232136;
+    color: #e0def4;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
-h1 {
-   color:#f0c6c6;
-   text-align: center;
+body h1 {
+    font-weight: 700;
+    font-size: 50px;
 }
 
-p {
-    color:#cad3f5;
-    /* text-align: center; */
+body a {
+    color: #c4a7e7;
+    font-size: 20px;
 }
 
-ul {
-    color: #cad3f5;
-    list-style-type: circle;
-    /* text-align: center; */
-    list-style-position: inside;
-}
-
-a {
-    color: blanchedalmond;
-}
-
-.textcenter {
-    display: grid;
-    justify-content: center;
-    align-content: start;
+body p {
+    color: #e0def4;
+    font-size: 20px;
 }
 
 .center{
@@ -51,10 +41,17 @@ a {
     height: 32px;
 }
 
-#discord {
-    color:#cad3f5;
+/* THIS IS ABSOLUTELY USEFUL https://css-tricks.com/snippets/css/centering-a-website/ */
+#page-wrap {
+  position: absolute; 
+  left: 50%; 
+  width: 800px;
+  margin-left: -400px;
+  bottom: 40%;
 }
 
-#discord u {
-    color: blanchedalmond;
-}
+#wrapper {
+    text-align:center;
+    width:100%;
+    height:100%;
+} 

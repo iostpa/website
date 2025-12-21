@@ -1,20 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Not Found</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-        <h1>404 - Not Found</h1>
-        <p>
-            <strong>Oops! It seems like the page you're looking for doesn't exist.</strong>
-        </p>
+<html>
+    <head>
+        <title>iostpa</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-        <p>
-            You can always go back to the <a href="/">home page</a>.
-        </p>
-    </div>
-</body>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh; /* full height */
+                display: flex;
+                justify-content: center; /* horizontal center */
+                align-items: center;     /* vertical center */
+
+            }
+
+            .error-box {
+                background: #2a273f;
+                padding: 40px 60px;
+                border-radius: 20px;   /* rounded background */
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+
+            .error-box h1 {
+                font-size: 80px;
+                margin: 0 0 10px;
+            }
+
+            .error-box p {
+                font-size: 20px;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="error-box">
+                <h1>404 - Not Found</h1>
+                <p>Oops! It seems like the page you're looking for doesn't exist.</p>
+                <br>
+                <p>You can always go back to the <a href="./">home page</a>.</p>
+        </div>
+    </body>
 </html>

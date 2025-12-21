@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>iostpa</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="iostpa's website">
-    <meta property="og:title" content="iostpa" />
-    <meta property="og:site_name" content="iostpa">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://iostpa.com" />
-    <meta property="og:image" content="https://iostpa.com/img/main-pfp.png"/>
-    <meta property="og:description" content="iostpa's website. Come check it out!" />
-    <meta name="theme-color" content="#d9d9d9" />
+<html>
+    <head>
+        <title>iostpa</title>
 
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link
-        rel="preload"
-        href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-    />
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+        <meta name="description" content="iostpa's website">
+        <meta property="og:title" content="iostpa" />
+        <meta property="og:site_name" content="iostpa">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iostpa.com" />
+        <meta property="og:image" content="https://iostpa.com/img/main-pfp.png"/>
+        <meta property="og:description" content="iostpa's website. Come check it out!" />
+        <meta name="theme-color" content="#d9d9d9"/>
 
-    <h1>Hey there!</h1>
-
-    <div class="textcenter">
-        <p>Welcome to my website! I'm iostpa, I just do whatever really. Here's some projects that I've contributed a lot to.</p>
-        <ul>
-            <li><a href="https://is-a.dev">is-a.dev</a>, owned by <a href="https://github.com/wdhdev">wdhdev</a></li>
-            <li><a href="https://is-not.cool">is-not.cool</a>, owned by <a href="https://github.com/trollmeight">trollmeight</a></li>
-            <li><a href="https://takina.orangc.net">Takina</a>, made by <a href="https://github.com/orangci">orangc</a></li>
-        </ul>
-        <p>If you want to contact me, you can via <a href="mailto:iostpa@iostpa.com">Email</a>, <a href="https://iostpa.com/bluesky">Bluesky</a>, <a href="https://iostpa.com/twitter">Twitter</a> or <a href="https://iostpa.com/discord">Discord</a>.</p>
-        <div id="discord">Loading...</div>
-    </div>
-
-    <div class="center">
-        <a href="https://iostpa.com/twitter" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/twitter.svg" alt="Twitter Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/youtube" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/youtube.svg" alt="YouTube Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/github" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/github.svg" alt="GitHub Logo" class="icons">
-        </a>
-        <a href="https://iostpa.com/bluesky" target="_blank" rel="noopener noreferrer" class="socials">
-            <img src="img/bluesky.svg" alt="Bluesky Logo" class="icons">
-        </a>
-    </div>
-
-    <script src="scripts/discord.js"></script>
-</body>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="page-wrap">
+                <h1>Hey there!</h1>
+                <p>I'm iostpa, I'm a (totally not bad) programmer!
+                    I have contributed to some subdomain providers like <a href="https://is-a.dev">is-a.dev</a> and <a href="https://is-not.cool">is-not.cool</a>. 
+                    I've also contributed to a discord bot from a <a href="https://orangc.net">fellow friend of mines</a> called <a href="https://takina.orangc.net">Takina</a>.
+                </p>
+                <p>I also have a homelab which I host basically everything on it,
+                    one service for example is my <a href="https://git.iostpa.com">git server</a>.</p>
+                <p>If you wish to contact me for whatever reason, you can contact me via <a href="mailto:iostpa@iostpa.com">Email</a>,
+                    <a href="https://iostpa.com/twitter">Twitter</a>,
+                    <a href="https://iostpa.com/discord">Discord</a>
+                    or <a href="https://iostpa.com/bluesky">Bluesky</a>.
+                </p>
+                <div class="center">
+                    <a href="https://iostpa.com/twitter" target="_blank" rel="noopener noreferrer" class="socials">
+                        <img src="img/twitter.svg" alt="Twitter Logo" class="icons">
+                    </a>
+                    <a href="https://iostpa.com/youtube" target="_blank" rel="noopener noreferrer" class="socials">
+                        <img src="img/youtube.svg" alt="YouTube Logo" class="icons">
+                    </a>
+                    <a href="https://iostpa.com/github" target="_blank" rel="noopener noreferrer" class="socials">
+                        <img src="img/github.svg" alt="GitHub Logo" class="icons">
+                    </a>
+                    <a href="https://iostpa.com/bluesky" target="_blank" rel="noopener noreferrer" class="socials">
+                        <img src="img/bluesky.svg" alt="Bluesky Logo" class="icons">
+                    </a>
+                        <a href="https://git.iostpa.com" target="_blank" rel="noopener noreferrer" class="socials">
+                        <img src="img/forgejo.svg" alt="Forgejo Logo" class="icons">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
