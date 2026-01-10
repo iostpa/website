@@ -23,18 +23,18 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3.125rem);
     margin: 0.5em 0;
 }
 
 p {
-    font-size: 20px;
+    font-size: clamp(1rem, 4vw, 1.25rem);
     margin: 0.5em 0;
 }
 
 a {
     color: #c4a7e7;
-    font-size: 20px;
+    font-size: clamp(1rem, 4vw, 1.25rem);
     text-decoration: none;
 }
 
