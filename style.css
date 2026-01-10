@@ -1,57 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #232136;
     color: #e0def4;
     font-family: 'Inter';
     font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body h1 {
+#page-wrap {
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
     font-weight: 700;
     font-size: 50px;
+    margin: 0.5em 0;
 }
 
-body a {
+p {
+    font-size: 20px;
+    margin: 0.5em 0;
+}
+
+a {
     color: #c4a7e7;
     font-size: 20px;
+    text-decoration: none;
 }
 
-body p {
-    color: #e0def4;
-    font-size: 20px;
+a:hover {
+    text-decoration: underline;
 }
 
-.center{
-    text-align:center;
-    border:1px;
+.images a {
+    text-decoration: none;
 }
 
-.icons{
-    display:inline-block;
-    margin:5px 5px;
-    padding:5px;
-    border:1px;
-}
-
-.socials {
-    text-decoration:none;
+.icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid transparent;
 }
 
 .socials img {
-    width: 32px;
-    height: 32px;
-}
-
-/* THIS IS ABSOLUTELY USEFUL https://css-tricks.com/snippets/css/centering-a-website/ */
-#page-wrap {
-  position: absolute; 
-  left: 50%; 
-  width: 800px;
-  margin-left: -400px;
-  bottom: 40%;
+    width: 40px;
+    height: 40px;
 }
 
 #wrapper {
-    text-align:center;
-    width:100%;
-    height:100%;
-} 
+    width: 100%;
+    text-align: center;
+}
