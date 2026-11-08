@@ -3,14 +3,17 @@
     <title>Matrix Well-Known URI</title>
   </head>
   <body>
-    <pre id="demo"></pre>
+    <pre id="json"></pre>
     <script>
       const matrixJson = {
         "m.homeserver": {
-            base_url: "https://matrix.iostpa.com"
-          }
+          base_url: "https://matrix.iostpa.com"
+        },
+        "m.identity_server": {
+          base_url: "https://iostpa.com"
+        }
       }
-      document.getElementById("demo").textContent =
+      document.getElementById("json").textContent =
       JSON.stringify(matrixJson, null, 2);
     </script>
   </body>
