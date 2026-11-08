@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Matrix Well-Known URI</title>
+  </head>
+  <body>
+    <pre id="demo"></pre>
+    <script>
+      const matrixJson = {
+        "m.homeserver": {
+            base_url: "https://matrix.iostpa.com"
+          }
+      }
+      document.getElementById("demo").textContent =
+      JSON.stringify(matrixJson, null, 2);
+    </script>
+  </body>
+</html>
